@@ -92,7 +92,7 @@ Ele mostra todos os canais cadastrados.
 Esta aplicação não contém fluxos, pois cada endpoint é individual e não depende do outro diretamente.
 
 # Créditos
-Este projeto foi criado por Humberto [(Discord Nick: op3n / Github: op3ny)](https://github.com/op3ny) e é um prazer ver você interessado nele!
+Este projeto foi criado por op3n [(Discord Nick: op3n / Github: op3ny)](https://github.com/op3ny) e é um prazer ver você interessado nele!
 
 # Finalização
 Esta foi a documentação técnica do LivePub. Caso queira testar o projeto, acesse: [clique aqui!](https://hsyst.xyz/html/livepub)
