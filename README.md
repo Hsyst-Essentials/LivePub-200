@@ -1,5 +1,5 @@
 # Tutorial de Uso
-Caso apenas queira realizar o download e execução do LivePub, [clique aqui!](https://github.com/Hsyst/LivePub-200/blob/main/use-tutorial.md)
+Caso apenas queira realizar o download e execução do LivePub, [clique aqui!](https://github.com/Hsyst-Essentials/LivePub-200/blob/main/use-tutorial.md)
 # LivePub - Documentação Técnica
 ## Índice:
 - Sobre o LivePub
@@ -36,13 +36,13 @@ O LivePub ele utiliza do NodeJS para sua API de funcionamento, portanto, é nece
 Aqui, falaremos sobre como o LivePub funciona na prática.
 
 ## Explicação do HLS (Nginx)
-O Nginx, ele deve estar configurado para receber as conexões RTMP, converter para o HLS e colocar em /var/www/html (pasta padrão do servidor web nginx). Com isso, ele ao receber a transmissão, ele automaticamente começa a sua conversão para o HLS (que é mais amigavel com navegadores). As configurações pré-definidas que funcionam com o LivePub estão disponíveis em: [clique aqui!](https://github.com/Hsyst/LivePub-200/tree/main/nginx-config-files)
+O Nginx, ele deve estar configurado para receber as conexões RTMP, converter para o HLS e colocar em /var/www/html (pasta padrão do servidor web nginx). Com isso, ele ao receber a transmissão, ele automaticamente começa a sua conversão para o HLS (que é mais amigavel com navegadores). As configurações pré-definidas que funcionam com o LivePub estão disponíveis em: [clique aqui!](https://github.com/Hsyst-Essentials/LivePub-200/tree/main/nginx-config-files)
 
 ## Explicação das APIs (NodeJS - Feito por nós)
 Esse script, é responsável por administrar as lives que entram para a plataforma (apenas que é dono do canal consegue liberar a transmisão), como todos podem transmitir com o nome do canal, a api ela libera para a homepage apenas caso o nome-do-canal.m3u8 esteja disponivel no Servidor HTTP (HLS), e caso a chave do canal esteja correto, e portanto, transmitir no nome do outro canal se torna algo inutil 👍. Além disso, ele administra a criação e a remoção de lives, e de canais!
 
 # Configuração do Nginx
-A configuração do Nginx está disponível em: [clique aqui!](https://github.com/Hsyst/LivePub-200/tree/main/nginx-config-files). Mas atenção, você deve ter o Nginx e o **módulo RTMP** instalado.
+A configuração do Nginx está disponível em: [clique aqui!](https://github.com/Hsyst-Essentials/LivePub-200/tree/main/nginx-config-files). Mas atenção, você deve ter o Nginx e o **módulo RTMP** instalado.
 
 # Configuração do LivePub
 ## Versão SSL e MAIN
@@ -51,19 +51,19 @@ A configuração do Nginx está disponível em: [clique aqui!](https://github.co
 ```
 deve ser alterado nas versões MAIN e SSL
 ```
-Segundo, você deve alterar o [create-a-channel.html](https://github.com/Hsyst/LivePub-200/blob/main/create-a-channel.html) a linha 647 pelo servidor RTMP (NGINX).
+Segundo, você deve alterar o [create-a-channel.html](https://github.com/Hsyst-Essentials/LivePub-200/blob/main/create-a-channel.html) a linha 647 pelo servidor RTMP (NGINX).
 
 ### index-ssl.js
 ```
 deve ser alterado apenas na versão SSL
 ```
-Altere o [index-ssl.js](https://github.com/Hsyst/LivePub-200/blob/main/back/index-ssl.js) nas linhas 14 - Config de porta, 21/22 - Config de SSL, 143 (IP da `HLS (HTTP) Server`, aprenda a executar no *Tutorial de Uso*)
+Altere o [index-ssl.js](https://github.com/Hsyst-Essentials/LivePub-200/blob/main/back/index-ssl.js) nas linhas 14 - Config de porta, 21/22 - Config de SSL, 143 (IP da `HLS (HTTP) Server`, aprenda a executar no *Tutorial de Uso*)
 
 ### index.js
 ```
 deve ser alterado apenas na versão Comum (MAIN)
 ```
-Altere o [index.js](https://github.com/Hsyst/LivePub-200/blob/main/back/index.js) nas linhas 12 - Config de porta, 140 (IP da `HLS (HTTP) Server`, aprenda a executar no *Tutorial de Uso*)
+Altere o [index.js](https://github.com/Hsyst-Essentials/LivePub-200/blob/main/back/index.js) nas linhas 12 - Config de porta, 140 (IP da `HLS (HTTP) Server`, aprenda a executar no *Tutorial de Uso*)
 
 
 
@@ -98,4 +98,4 @@ Este projeto foi criado por op3n [(Discord Nick: op3n / Github: op3ny)](https://
 Esta foi a documentação técnica do LivePub. Caso queira testar o projeto, acesse: [clique aqui!](https://hsyst.xyz/html/livepub)
 
 # Licença
-Este projeto está licenciado pela licença [MIT](https://github.com/Hsyst/LivePub-200/blob/main/LICENSE), e portanto, o uso dela está condicionado a esta licença.
+Este projeto está licenciado pela licença [MIT](https://github.com/Hsyst-Essentials/LivePub-200/blob/main/LICENSE), e portanto, o uso dela está condicionado a esta licença.
