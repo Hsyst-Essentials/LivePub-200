@@ -9,7 +9,7 @@ Para esse tutorial fluir, você necessita do NPM e NodeJS instalados (`sudo apt 
 ### 1:
 Primeiro, realize o `git clone` desse repositório
 ```
-git clone https://github.com/Hsyst/LivePub-200
+git clone https://github.com/Hsyst-Essentials/LivePub-200
 ```
 
 ### 2:
@@ -19,7 +19,7 @@ cd LivePub-200/back
 ```
 
 ### 3:
-Agora, você deve realizar as alterações nos arquivos que são pedidos na [documentação técnica](https://github.com/Hsyst/LivePub-200/tree/main#configura%C3%A7%C3%A3o-do-livepub), relaxa é só alterar as linhas.
+Agora, você deve realizar as alterações nos arquivos que são pedidos na [documentação técnica](https://github.com/Hsyst-Essentials/LivePub-200/tree/main#configura%C3%A7%C3%A3o-do-livepub), relaxa é só alterar as linhas.
 
 ### 4:
 Agora, você deve instalar o nginx e o módulo RTMP e configura-lo.
